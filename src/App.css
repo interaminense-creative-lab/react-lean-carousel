@@ -1,38 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #607d8b;
+    font-family: 'Amatic SC', cursive;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+    font-size: 3rem;
+    color: #a6c7d6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .lights-on {
+    text-shadow: 0 0px 6px #92b2cc;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App .btn {
+    background-color: #a6c7d5;
+    border: 0 none;
+    padding: 0.25rem 0.5em;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    opacity: 0.5;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.App .btn:hover {
+    opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .artist {
+    position: absolute;
+    z-index: 1;
+    left: 1rem;
+    bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+}
+
+.App .artist:hover {
+    text-decoration: underline;
+}
+
+.App .artist__thumbnail {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.App .artist__content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    justify-content: center;
+}
+
+/* Custom React Lean Carousel */
+
+.react-simple-carousel__content {
+    box-shadow: 40px 40px 40px -40px;
 }

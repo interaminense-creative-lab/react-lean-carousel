@@ -1,0 +1,63 @@
+.react-simple-carousel {
+    white-space: nowrap;
+    position: relative;
+}
+
+.react-simple-carousel__content {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.react-simple-carousel__item {
+    display: inline-block;
+}
+
+.react-simple-carousel__controls {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.react-simple-carousel__controls--prev {
+    transform: translateX(calc(-100% - 1rem));
+}
+
+.react-simple-carousel__controls--next {
+    transform: translateX(calc(100% + 1rem));
+}
+
+.react-simple-carousel__indicator {
+    border-radius: 100%;
+    cursor: pointer;
+    height: 10px;
+    margin: 0 5px;
+    transition: box-shadow .2s ease-in-out;
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.react-simple-carousel__indicator:not(.react-simple-carousel__indicator--active):hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .8) inset;
+}
+
+.react-simple-carousel__indicator--active {
+    cursor: default;
+    background-color: #000;
+}
+
+.react-simple-carousel__indicators {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.react-simple-carousel__items {
+    transition: transform .5s ease-in-out;
+}
