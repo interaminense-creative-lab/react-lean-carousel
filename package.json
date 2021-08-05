@@ -1,7 +1,6 @@
 {
-  "name": "react-lean-carousel",
+  "name": "@interaminense/react-lean-carousel",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -15,6 +14,9 @@
     "react-scripts": "4.0.3",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
+  },
+  "publishConfig": {
+    "@interaminense:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "start": "react-scripts start",
